@@ -70,7 +70,8 @@ function checkAnswer() {
     if (answerBox.value === first40ElementsArray[randomFirst40Index].symbol) {
         //... change the inputed answer to correct
         answerBox.value = "Pareizi!";
-        // disable all possible human interaction with the index
+        // disable all possible human interaction with the index and check answer button
+        checkButton.disabled = true;
         answerBox.disabled = true;
         // Changes font colour to white to make it more viewable
         answerBox.style.color = 'green';
@@ -82,8 +83,9 @@ function checkAnswer() {
         setTimeout(() => {
             // Clears the input so it looks nicer
             answerBox.value = "";
-            // Enables all possible human interaction with the index
+            // Enables all possible human interaction with the index and check answer button
             answerBox.disabled = false;
+            checkButton.disabled = false;
             // Changes font colour back to black
             answerBox.style.color = 'black';
             // Clears the animation
