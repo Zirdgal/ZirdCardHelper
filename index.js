@@ -58,9 +58,41 @@ const first40ElementsArray = [hydrogenObject, heliumObject, lithiumObject, beryl
 // Global random element
 let randomFirst40Index
 
-// Function that gets random card in list above
-function nextCard() {
-    // Function that gets a random number
+// Function that checks if the answer is correct
+function checkAnswer() {
+    // If the inputed value is identical to the Periodic table elements name then...
+    if (answerBox.value === first40ElementsArray[randomFirst40Index].symbol) {
+        //... change the inputed answer to correct
+        answerBox.value = "Pareizi!";
+        // disable all possible human interaction with the index
+        answerBox.disabled = true;
+        // Changes font colour to white to make it more viewable
+        answerBox.style.color = 'green';
+        // after 2 seconds ...
+        setTimeout(() => {
+            // Clears the input so it looks nicer
+            answerBox.value = "";
+            // Enables all possible human interaction with the index
+            answerBox.disabled = false;
+            // Changes font colour back to black
+            answerBox.style.color = 'black';
+                // Function that gets a random number
+            let getRandomFirst40 = function() {
+                return Math.floor(Math.random() * first40ElementsArray.length);
+            }
+            // Saves random number
+            randomFirst40Index = getRandomFirst40();
+            // Uses random number as object in list
+            cardText.innerHTML = first40ElementsArray[randomFirst40Index].nameLV;
+        }, 1500);
+    } else {
+        // ... change the inputed answer to incorrect
+        answerBox.value = "Nepareizi, mēģini vēlreiz!";
+    }
+} 
+// Function only runs onFirstRun
+function onFirstRun() {
+    // Ger random number
     let getRandomFirst40 = function() {
         return Math.floor(Math.random() * first40ElementsArray.length);
     }
@@ -68,27 +100,11 @@ function nextCard() {
     randomFirst40Index = getRandomFirst40();
     // Uses random number as object in list
     cardText.innerHTML = first40ElementsArray[randomFirst40Index].nameLV;
-    // Clears the input so it looks nicer
-    answerBox.value = "";
-}
 
-// Function that checks if the answer is correct
-function checkAnswer() {
-    // If the inputed value is identical to the Periodic table elements name then...
-    if (answerBox.value === first40ElementsArray[randomFirst40Index].symbol) {
-        //... change the inputed answer to correct
-        answerBox.value = "Pareizi!";
-    } else {
-        // ... change the inputed answer to incorrect
-        answerBox.value = "Nepareizi, mēģini vēlreiz!";
-    }
-} 
+}
 
 // runs the checkAnswer function
 checkButton.onclick = checkAnswer;
 
-// runs the NextCard() function
-nextButton.onclick = nextCard;
-
 // runs the NextCard() function on page load so it doesnt show placeholder text
-window.onload = function() {nextCard()};    
+window.onload = function() {onFirstRun()};    
