@@ -73,10 +73,9 @@ function checkAnswer() {
         // disable all possible human interaction with the index and check answer button
         checkButton.disabled = true;
         answerBox.disabled = true;
+        corectAnswerSFX.play();
         // Changes font colour to white to make it more viewable
         answerBox.style.color = 'green';
-        // Plays audio when correct
-        correctAnswerSFX.play();
         // Plays green correct animation
         body.style.animation="correctAnswer 1s ease-in-out"
         // after 2 seconds ...
@@ -102,6 +101,25 @@ function checkAnswer() {
     } else {
         // ... change the inputed answer to incorrect
         answerBox.value = "Nepareizi, mēģini vēlreiz!";
+               // disable all possible human interaction with the index and check answer button
+        checkButton.disabled = true;
+        answerBox.disabled = true;
+        // Changes font colour to white to make it more viewable
+        answerBox.style.color = 'red';
+        // Plays green correct animation
+        body.style.animation="wrongAnswer 1s ease-in-out"
+        // after 2 seconds ...
+        setTimeout(() => {
+            // Clears the input so it looks nicer
+            answerBox.value = "";
+            // Enables all possible human interaction with the index and check answer button
+            answerBox.disabled = false;
+            checkButton.disabled = false;
+            // Changes font colour back to black
+            answerBox.style.color = 'black';
+            // Clears the animation
+            body.style.animation = "";
+        }, 1000);
     }
 } 
 // Function only runs onFirstRun
