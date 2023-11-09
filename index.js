@@ -73,7 +73,7 @@ function checkAnswer() {
         // disable all possible human interaction with the index and check answer button
         checkButton.disabled = true;
         answerBox.disabled = true;
-        corectAnswerSFX.play();
+        correctAnswerSFX.play();
         // Changes font colour to white to make it more viewable
         answerBox.style.color = 'green';
         // Plays green correct animation
