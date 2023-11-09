@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color:white;
-    margin: 0;
+    margin-top: 5vh;
     padding: 0;
 }
 .flex-container {
@@ -11,6 +11,47 @@ body {
     flex-direction:column;
     height:100vh;
 }
+a.fake-button {
+    text-decoration: none;
+    color: white;
+    border:solid white;
+    padding:5px;
+    border-radius: 15px;
+}
+button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border:solid white;
+    padding:5px;
+    border-radius: 15px;
+}
+
+/*
+      __  __    
+||\ ||  \|_ \_/ 
+|| \||__/|__/ \ 
+                
+*/
+
+.first40cards a {
+    font-size:4em;
+}
+.options {
+    margin: 5%;
+}
+@media screen and (max-width:500px) {
+    .first40cards a {
+        font-size:2em;
+    }
+}
+
+/*
+       __    __     __  __  
+ |__| /  \  /   /\ |__)|  \ 
+    | \__/  \__/--\| \ |__/ 
+                            
+*/
 .card {
     height:33vh;
     width:50vw;
@@ -34,11 +75,15 @@ body {
 }
 input {
     text-align: center;
+    border-radius: 15px;
 }
 .buttons {
     width:30vw;
-    height:10vh;
+    height:30vh;
     text-align: center;
+}
+.buttons div {
+    margin-top:2vh;
 }
 @media screen and (max-width: 700px) {
     .card {
