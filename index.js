@@ -84,7 +84,7 @@ function checkAnswer() {
             randomFirst40Index = getRandomFirst40();
             // Uses random number as object in list
             cardText.innerHTML = first40ElementsArray[randomFirst40Index].nameLV;
-        }, 1500);
+        }, 1000);
     } else {
         // ... change the inputed answer to incorrect
         answerBox.value = "Nepareizi, mēģini vēlreiz!";
