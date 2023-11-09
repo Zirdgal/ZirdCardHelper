@@ -3,8 +3,6 @@ body {
     color:white;
     margin-top: 5vh;
     padding: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 .flex-container {
     display: flex;
