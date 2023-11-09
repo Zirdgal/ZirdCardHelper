@@ -8,7 +8,9 @@ const answerBox = document.getElementById("answer");
 
 //Audio Elements
 var correctAnswerSFX = document.getElementById("correct-answer-audio");
+var wrongAnswerSFX = document.getElementById("wrong-answer-audio");
 correctAnswerSFX.volume = 0.5;
+wrongAnswerSFX.volume = 0.5;
 
 // Periodic table elements
 const hydrogenObject = {name: "Hydrogen", nameLV: "Ūdeņradis", symbol: "H", atomicNumber: "1"};
@@ -73,6 +75,7 @@ function checkAnswer() {
         // disable all possible human interaction with the index and check answer button
         checkButton.disabled = true;
         answerBox.disabled = true;
+        // Play correct answer SFX
         correctAnswerSFX.play();
         // Changes font colour to white to make it more viewable
         answerBox.style.color = "green";
@@ -101,12 +104,14 @@ function checkAnswer() {
     } else {
         // ... change the inputed answer to incorrect
         answerBox.value = "Nepareizi, mēģini vēlreiz!";
-               // disable all possible human interaction with the index and check answer button
+        // disable all possible human interaction with the index and check answer button
         checkButton.disabled = true;
         answerBox.disabled = true;
-        // Changes font colour to white to make it more viewable
+        // Play wrong answer SFX
+        wrongAnswerSFX.play();
+        // Changes font colour to red cuz you a FAILURE
         answerBox.style.color = "red";
-        // Plays green correct animation
+        // Plays 'red incorrect' animation
         body.style.animation="wrongAnswer 1s ease-in-out"
         // after 2 seconds ...
         setTimeout(() => {
