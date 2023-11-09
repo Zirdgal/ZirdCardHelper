@@ -1,8 +1,14 @@
 // HTML DOM elements
 let cardText = document.getElementById("card-text");
+const body = document.getElementsByTagName("body")[0];
+const flexContainer = document.getElementById("flex-container-f40");
 const nextButton = document.getElementById("next-button");
 const checkButton = document.getElementById("check-button");
 const answerBox = document.getElementById("answer");
+
+//Audio Elements
+var correctAnswerSFX = document.getElementById("correct-answer-audio");
+correctAnswerSFX.volume = 0.5;
 
 // Periodic table elements
 const hydrogenObject = {name: "Hydrogen", nameLV: "Ūdeņradis", symbol: "H", atomicNumber: "1"};
@@ -68,6 +74,10 @@ function checkAnswer() {
         answerBox.disabled = true;
         // Changes font colour to white to make it more viewable
         answerBox.style.color = 'green';
+        // Plays audio when correct
+        correctAnswerSFX.play();
+        // Plays green correct animation
+        body.style.animation="correctAnswer 1s ease-in-out"
         // after 2 seconds ...
         setTimeout(() => {
             // Clears the input so it looks nicer
@@ -76,6 +86,8 @@ function checkAnswer() {
             answerBox.disabled = false;
             // Changes font colour back to black
             answerBox.style.color = 'black';
+            // Clears the animation
+            body.style.animation = "";
                 // Function that gets a random number
             let getRandomFirst40 = function() {
                 return Math.floor(Math.random() * first40ElementsArray.length);
