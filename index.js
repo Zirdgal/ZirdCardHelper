@@ -75,9 +75,9 @@ function checkAnswer() {
         answerBox.disabled = true;
         correctAnswerSFX.play();
         // Changes font colour to white to make it more viewable
-        answerBox.style.color = 'green';
+        answerBox.style.color = "green";
         // Plays green correct animation
-        body.style.animation="correctAnswer 1s ease-in-out"
+        body.style.animation = "correctAnswer 1s ease-in-out"
         // after 2 seconds ...
         setTimeout(() => {
             // Clears the input so it looks nicer
@@ -86,7 +86,7 @@ function checkAnswer() {
             answerBox.disabled = false;
             checkButton.disabled = false;
             // Changes font colour back to black
-            answerBox.style.color = 'black';
+            answerBox.style.color = "black";
             // Clears the animation
             body.style.animation = "";
                 // Function that gets a random number
@@ -105,7 +105,7 @@ function checkAnswer() {
         checkButton.disabled = true;
         answerBox.disabled = true;
         // Changes font colour to white to make it more viewable
-        answerBox.style.color = 'red';
+        answerBox.style.color = "red";
         // Plays green correct animation
         body.style.animation="wrongAnswer 1s ease-in-out"
         // after 2 seconds ...
@@ -116,7 +116,7 @@ function checkAnswer() {
             answerBox.disabled = false;
             checkButton.disabled = false;
             // Changes font colour back to black
-            answerBox.style.color = 'black';
+            answerBox.style.color = "black";
             // Clears the animation
             body.style.animation = "";
         }, 1000);
