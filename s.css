@@ -3,6 +3,7 @@ body {
     color:white;
     margin-top: 5vh;
     padding: 0;
+    font-family: Times;
 }
 .flex-container {
     display: flex;
@@ -15,7 +16,7 @@ a.fake-button {
     text-decoration: none;
     color: white;
     border:solid white;
-    padding:5px;
+    padding: 8px 9px 11px 9px;
     border-radius: 15px;
     background-color: black;
 }
@@ -24,7 +25,7 @@ button {
     color: white;
     background-color: black;
     border:solid white;
-    padding:5px;
+    padding:10px;
     border-radius: 15px;
 }
 
@@ -34,19 +35,42 @@ button {
 || \||__/|__/ \ 
                 
 */
-
-.first40cards a {
-    font-size:4em;
-}
 .options {
-    margin: 5%;
+    margin: 0% 5% 5% 5%;
 }
-@media screen and (max-width:500px) {
-    .first40cards a {
-        font-size:2em;
-    }
+.dropdown-button {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: solid white;
+    border-radius:2px;
+    cursor: pointer;
 }
-
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: rgb(0, 0, 0);
+}
+.index-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.index-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c0c0c0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius:2px;
+    z-index: 1;
+}
+.index-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.index-dropdown-content a:hover {background-color: #ddd;}
+  .show {display:block;} /* THIS IS IN JS, IT HAS NO USE HERE OTHER THAN TO BE JS BAIT */
 /*
        __    __     __  __  
  |__| /  \  /   /\ |__)|  \ 
@@ -93,6 +117,27 @@ input {
 }
 .buttons div {
     margin-top:2vh;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 #check-button, #back-button {
     font-size:2em;

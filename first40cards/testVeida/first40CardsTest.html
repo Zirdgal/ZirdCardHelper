@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../s.css">
+
+    <title>Zird Card Helper (LV)</title>
+</head>
+<body>
+    <audio id="correct-answer-audio"><source src="../../audio/SFX-Ding-Short.wav" type="audio/wav"></audio>
+    <audio id="wrong-answer-audio"><source src="../../audio/SFX-WrongBuzzer.wav" type="audio/wav"></audio>
+
+    <div class="flex-container" id="flex-container-f40">
+        <div class="card">
+            <div class="card-text">
+                <p id="card-text">Lādējas...</p>
+            </div>
+        </div>
+        <div class="answer-box">
+            <label for="answer">Ieraksti elementu saīsinājumu teksta ailītē:</label>
+            <input type="text" id="answer" name="answer" maxlength="20" minlength="1">
+        </div>
+        <div class="buttons">
+            <div class="check-card">
+                <button id="check-button">Pārbaudīt!</button>
+            </div>
+            <div class="back-card">
+                <a class="fake-button" href="../../index.html" id="back-button">Atpakaļ!</a>
+            </div>
+        </div>
+    </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h1>Jūsu rezultāti:</h1>
+    <p id="score-text"></p>
+    <button id="retry-button">Mēģināt vēlreiz</button>
+    <a class="fake-button" href="../../index.html">Uz sākumu</a>
+  </div>
+</div>
+    <script src="first40CardsTest.js"></script>
+</body>
+</html>
