@@ -28,7 +28,44 @@ button {
     padding:10px;
     border-radius: 15px;
 }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content a {
+    color:lightblue;
+    font-size:20px;
 
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*
       __  __    
 ||\ ||  \|_ \_/ 
@@ -63,13 +100,16 @@ button {
     border-radius:2px;
     z-index: 1;
 }
-.index-dropdown-content a {
+.index-dropdown-content button {
     color: black;
+    background-color: #c0c0c0;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border:none;
+    border-radius: 0px;
 }
-.index-dropdown-content a:hover {background-color: #ddd;}
+.index-dropdown-content button:hover {background-color: #ddd;}
   .show {display:block;} /* THIS IS IN JS, IT HAS NO USE HERE OTHER THAN TO BE JS BAIT */
 /*
        __    __     __  __  
@@ -117,27 +157,6 @@ input {
 }
 .buttons div {
     margin-top:2vh;
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-/* Modal Content/Box */
-.modal-content {
-    background-color: #000000;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #ffffff;
-    width: 80%; /* Could be more or less, depending on screen size */
 }
 #check-button, #back-button {
     font-size:2em;

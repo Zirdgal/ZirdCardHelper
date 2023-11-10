@@ -5,7 +5,7 @@ const flexContainer = document.getElementById("flex-container-f40");
 const nextButton = document.getElementById("next-button");
 const checkButton = document.getElementById("check-button");
 const answerBox = document.getElementById("answer");
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("first40test-Modal");
 const scoreText = document.getElementById("score-text");
 const retryButton = document.getElementById("retry-button");
 

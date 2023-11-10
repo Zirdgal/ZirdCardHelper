@@ -17,12 +17,29 @@
             <div class="index-dropdown">
                 <button onclick="myFunction()" class="dropdown-button">Pirmās 40 kārtis</button>
                 <div id="first40-dropdown" class="index-dropdown-content">
-                  <a href="first40cards/testVeida/first40CardsTest.html">Testa veida</a>
-                  <a href="first40cards/nebeidzami/first40CardsNeverending.html">Nebeidzami</a>
+                    <button id="index-first40test-button">Testa veida</button>
+                    <div class="modal" id="index-first40test-modal">
+                        <div class="modal-content">
+                            <span class="close" id="index-first40test-close">&times;</span>
+                            <h1>Pirmās 40 kārtis testa veida režīms:</h1>
+                            <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm vienreiz. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. <u>Kārtis nevar atkārtoties</u>, un jūsu rezultāts tiks parādīts pēc testa izpildīšanas.</p>
+                            <a href="first40cards/testVeida/first40CardsTest.html">Tūlīt mēģināt testu!</a>
+                        </div>
+                    </div>
+                  
+                    <button id="index-first40neverending-button">Nebeidzami</button>
+                    <div class="modal" id="index-first40neverending-modal">
+                        <div class="modal-content">
+                            <span class="close" id="index-first40neverending-close">&times;</span>
+                            <h1>Pirmās 40 kārtis nebeidzamais režīms:</h1>
+                            <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm nebeidzami ilgi. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. Kārtis nevar divreiz vienas pēc otras atkārtoties, bet tās var atkārtoties.</p>
+                            <a href="first40cards/nebeidzami/first40CardsNeverending.html">Tūlīt mēģināt!</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
