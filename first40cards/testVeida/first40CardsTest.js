@@ -97,7 +97,7 @@ function checkAnswer() {
         } else {
             console.log("Incorrect answer");
             // ... change the inputed answer to incorrect
-            answerBox.value = "Nepareizi, mēģini vēlreiz!";
+            answerBox.value = "Nepareizi, pareizā atbilde bija: " + first40ElementsArray[randomFirst40Index].symbol;
             // disable all possible human interaction with the index and check answer button
             checkButton.disabled = true;
             answerBox.disabled = true;

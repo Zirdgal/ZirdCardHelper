@@ -148,6 +148,7 @@ input {
     text-align: center;
     border-radius: 15px;
     font-size: 0.75em;
+    width:20vw;
 }
 .buttons {
     margin-top:-5vh;
