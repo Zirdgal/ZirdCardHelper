@@ -173,6 +173,9 @@ input {
     #check-button, #back-button {
         font-size:1em;
     }
+    input {
+        width:80vw;
+    }
 }
 @media screen and (max-width: 400px) {
     .card {
