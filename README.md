@@ -1,5 +1,5 @@
-# ZirdCardHelper
-A simple website meant for me and my classmates to learn the periodic table slowly but surely!
+# Zird School Helper
+A simple website meant for me and my classmates to learn random chemistry topics for now!
 
 ### NOTE: The website is in Latvian !!!
 
