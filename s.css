@@ -1,10 +1,18 @@
+/*
+COLOURS:
+    --text: #f6fdfe;
+    --background: #04181b;
+    --primary: #124f8c;
+    --secondary: #072f36;
+    --accent: #559daa;
+*/
 @font-face {
     font-family: Zird-Chemistry;
     src: url(fonts/NotoSerifBalinese-Regular.ttf);
 }
 body {
-    background-color: black;
-    color:white;
+    background-color: #04181b;
+    color:#f6fdfe;
     margin-top: 5vh;
     padding: 0;
     font-family: Zird-Chemistry;
