@@ -1,7 +1,7 @@
 // biCF = binary compound Formula(mode)
 
 // HTML DOM ELEMENTS
-let cardText = document.getElementById("card-text");
+const cardText = document.getElementsByClassName("card-text-content")[0];
 const body = document.getElementsByTagName("body")[0];
 const flexContainer = document.getElementById("flex-container-biCF");
 const checkButton = document.getElementById("check-button");
@@ -36,7 +36,7 @@ function onFirstRun() {
     randomBiCFPositiveIndex = Math.floor(Math.random() * biCFPositiveArray.length);
 
     // Uses random number as object in list
-    cardText.innerHTML = biCFPositiveArray[randomBiCFPositiveIndex].nameLVG + " " + biCFNegativeArray[randomBiCFNegativeIndex].nameLVOksīdi;
+    cardText.innerHTML = biCFPositiveArray[randomBiCFPositiveIndex].nameLVG + "\n\n" + biCFNegativeArray[randomBiCFNegativeIndex].nameLVOksīdi;
     // Call getCorrectAnswer to set/update the correct answer for the new question
     getCorrectAnswer();
 }

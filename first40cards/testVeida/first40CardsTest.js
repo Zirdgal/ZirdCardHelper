@@ -1,5 +1,5 @@
 // HTML DOM elements
-let cardText = document.getElementById("card-text");
+const cardText = document.getElementsByClassName("card-text-content")[0];
 const body = document.getElementsByTagName("body")[0];
 const flexContainer = document.getElementById("flex-container-f40");
 const nextButton = document.getElementById("next-button");
