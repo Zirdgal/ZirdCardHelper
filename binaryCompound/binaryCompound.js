@@ -44,10 +44,10 @@ function onFirstRun() {
 // Correct answer
 function getCorrectAnswer() {
     let firstElementName = biCFPositiveArray[randomBiCFPositiveIndex].symbol;
-    let firstElementValue = biCFNegativeArray[randomBiCFNegativeIndex].prostulate;
+    let firstElementValue = biCFNegativeArray[randomBiCFNegativeIndex].oxidationNumber;
 
     let secondElementName = biCFNegativeArray[randomBiCFNegativeIndex].symbol;
-    let secondElementValue = biCFPositiveArray[randomBiCFPositiveIndex].prostulate;
+    let secondElementValue = biCFPositiveArray[randomBiCFPositiveIndex].oxidationNumber;
 
     // Calculate the greatest common divisor (GCD)
     const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
