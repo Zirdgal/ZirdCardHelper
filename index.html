@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +11,44 @@
 </head>
 <body>
     <div class="flex-container">
-        <div class="options">
-            <div class="title">
-                <h1>Izvēlies ko mācīsies:</h1>
-            </div>
-            <div class="index-dropdown">
-                <button onclick="myFunction()" class="dropdown-button">Pirmās 40 kārtis</button>
-                <div id="first40-dropdown" class="index-dropdown-content">
-                    <button id="index-first40test-button">Testa veida</button>
-                    <div class="modal" id="index-first40test-modal">
-                        <div class="modal-content">
-                            <span class="close" id="index-first40test-close">&times;</span>
-                            <h1>Pirmās 40 kārtis testa veida režīms:</h1>
-                            <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm vienreiz. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. <u>Kārtis nevar atkārtoties</u>, un jūsu rezultāts tiks parādīts pēc testa izpildīšanas.</p>
-                            <a href="first40cards/testVeida/first40CardsTest.html">Tūlīt mēģināt testu!</a>
-                        </div>
+        <div class="title">
+            <h1>Izvēlies ko mācīsies:</h1>
+        </div>
+        <div class="index-dropdown">
+            <button onclick="first40Dropdown()" class="dropdown-button">Pirmās 40 kārtis</button>
+            <div id="first40-dropdown" class="index-dropdown-content">
+                <button id="index-first40test-button">Testa veida</button>
+                <div class="modal" id="index-first40test-modal">
+                    <div class="modal-content">
+                       <span class="close" id="index-first40test-close">&times;</span>
+                        <h1>Pirmās 40 kārtis testa veida režīms:</h1>
+                        <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm vienreiz. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. <u>Kārtis nevar atkārtoties</u>, un jūsu rezultāts tiks parādīts pēc testa izpildīšanas.</p>
+                        <a href="first40cards/testVeida/first40CardsTest.html">Tūlīt mēģināt testu!</a>
                     </div>
-                  
-                    <button id="index-first40neverending-button">Nebeidzami</button>
-                    <div class="modal" id="index-first40neverending-modal">
-                        <div class="modal-content">
-                            <span class="close" id="index-first40neverending-close">&times;</span>
-                            <h1>Pirmās 40 kārtis nebeidzamais režīms:</h1>
-                            <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm nebeidzami ilgi. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. Kārtis nevar divreiz vienas pēc otras atkārtoties, bet tās var atkārtoties.</p>
-                            <a href="first40cards/nebeidzami/first40CardsNeverending.html">Tūlīt mēģināt!</a>
-                        </div>
+                </div>
+              
+                <button id="index-first40neverending-button">Nebeidzami</button>
+                <div class="modal" id="index-first40neverending-modal">
+                   <div class="modal-content">
+                        <span class="close" id="index-first40neverending-close">&times;</span>
+                        <h1>Pirmās 40 kārtis nebeidzamais režīms:</h1>
+                        <p>Jums būs dotas kārtis, kas ies cauri visām 40 kārtīm nebeidzami ilgi. Uz kārtis rādīsies kāds elements, Jūsu uzdevums ir uzrakstīt tās kārtis simbolu. Kārtis nevar divreiz vienas pēc otras atkārtoties, bet tās var atkārtoties.</p>
+                        <a href="first40cards/nebeidzami/first40CardsNeverending.html">Tūlīt mēģināt!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index-dropdown">
+            <button onclick="biCDropdown()" class="dropdown-button">Binārie savienojumi</button>
+            <div id="biC-dropdown" class="index-dropdown-content">
+                <button id="index-biC-button">Bināro savienojumu formulas</button>
+                <div class="modal" id="index-biC-modal">
+                    <div class="modal-content">
+                        <span class="close" id="index-biC-close">&times;</span>
+                        <h1>Bināro savienojumu formulu sastādīšana:</h1>
+                        <p>Help 3: </p>
+                        <a href="binaryCompound/binaryCompound.html">Tūlīt mēģināt!</a>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,20 @@
 /*
 COLOURS:
-    --text: #f6fdfe;
-    --background: #04181b;
-    --primary: #124f8c;
-    --secondary: #072f36;
-    --accent: #559daa;
+--text: #e9edf6;
+--background: #070a12;
+--primary: #a4b3da;
+--secondary: #101728;
+--accent: #4e6ab7;
 */
+
+
 @font-face {
     font-family: Zird-Chemistry;
     src: url(fonts/NotoSerifBalinese-Regular.ttf);
 }
 body {
-    background-color: #04181b;
-    color:#f6fdfe;
+    background-color: #070a12;
+    color:#e9edf6;
     margin-top: 5vh;
     padding: 0;
     font-family: Zird-Chemistry;
@@ -23,20 +25,21 @@ body {
     justify-content: center;
     flex-direction:column;
     height:93vh;
+    margin: 0% 5% 5% 5%;
 }
 a.fake-button {
     text-decoration: none;
-    color: white;
-    border:solid white;
+    color: #e9edf6;
+    border:solid #e9edf6;
     padding: 8px 9px 2px 9px;
     border-radius: 15px;
-    background-color: black;
+    background-color: #070a12;
 }
 button {
     text-decoration: none;
-    color: white;
-    background-color: black;
-    border:solid white;
+    color: #e9edf6;
+    background-color: #070a12;
+    border:solid #e9edf6;
     padding:10px;
     border-radius: 15px;
 }
@@ -46,6 +49,9 @@ input {
     border-radius: 15px;
     font-size: 0.75em;
     width:20vw;
+}
+h1 {
+    color:#a4b3da;
 }
 /* The Modal (background) */
 .modal {
@@ -57,15 +63,14 @@ input {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: #070a12;
 }
 /* Modal Content/Box */
 .modal-content {
-    background-color: #000000;
+    background-color: #070a12;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #ffffff;
+    border: 1px solid #e9edf6;
     width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal-content a {
@@ -81,7 +86,7 @@ input {
     font-weight: bold;
 }
 .close:hover, .close:focus {
-    color: black;
+    color: #070a12;
     text-decoration: none;
     cursor: pointer;
 }
@@ -91,44 +96,50 @@ input {
 || \||__/|__/ \ 
                 
 */
-.options {
-    margin: 0% 5% 5% 5%;
-}
 .dropdown-button {
-    background-color: #000000;
-    color: white;
+    background-color: #070a12;
+    color: #e9edf6;
     padding: 16px;
     font-size: 16px;
-    border: solid white;
+    border: solid #e9edf6;
     border-radius:2px;
     cursor: pointer;
 }
 .dropdown-button:hover, .dropdown-button:focus {
-    background-color: rgb(0, 0, 0);
+    background-color: #070a12;
 }
 .index-dropdown {
     position: relative;
     display: inline-block;
+    margin-top:5vh;
 }
 .index-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #c0c0c0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #101728;
+    box-shadow: 0px 8px 16px 0px #00000033;
     border-radius:2px;
     z-index: 1;
+    overflow-y: none;
 }
 .index-dropdown-content button {
-    color: black;
-    background-color: #c0c0c0;
+    color: #070a12;
+    background-color: #4e6ab7;
     padding: 12px 40px;
     text-decoration: none;
     display: block;
     border:none;
     border-radius: 0px;
+    font-weight: bold;
 }
 .index-dropdown-content button:hover {background-color: #ddd;}
   .show {display:block;} /* THIS IS IN JS, IT HAS NO USE HERE OTHER THAN TO BE JS BAIT */
+#first40-dropdown button {
+    width: 152px;
+}
+#biC-dropdown button {
+    width: 174px;
+}
 /*
        __    __     __  __  
  |__| /  \  /   /\ |__)|  \ 
@@ -142,9 +153,9 @@ input {
     text-align: center;
     line-height: 0;
     margin-bottom:10vh;
-    border: solid white;
+    border: solid #e9edf6;
     border-radius: 15px;
-    background-color:black;
+    background-color:#070a12;
 }
 .card-text {
     margin-top:17.5%;
@@ -154,8 +165,8 @@ input {
     text-align:center;
     margin-bottom: 5vh;
     padding:5%;
-    border: solid white;
-    background-color:black;
+    border: solid #e9edf6;
+    background-color:#070a12;
     border-radius: 15px;
 }
 .answer-box label {
@@ -204,11 +215,11 @@ input {
 */
 @keyframes correctAnswer {
     0% {background-color: rgb(0, 135, 0);}
-    100% {background-color: rgb(0, 0, 0);}
+    100% {background-color: #070a12;}
 }
 @keyframes wrongAnswer {
     0% {background-color: rgb(135, 0, 0);}
-    100% {background-color: rgb(0, 0, 0);}
+    100% {background-color: #070a12;}
 }
 
 #first40cheetsheet {

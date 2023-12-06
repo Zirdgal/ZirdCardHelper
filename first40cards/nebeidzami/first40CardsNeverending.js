@@ -18,7 +18,7 @@ var first40ElementsArray = [hydrogenObject, heliumObject, lithiumObject, berylli
 var removedFirst40ElementsArray = [];
 
 // Global random elements
-let randomFirst40Index
+let randomFirst40Index;
 
 
 // Function that checks if the answer is correct
