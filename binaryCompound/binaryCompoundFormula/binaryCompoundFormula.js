@@ -8,7 +8,7 @@ const checkButton = document.getElementById("check-button");
 const answerBox = document.getElementById("answer");
 
 // All usable elements in an array
-var biCFPositiveArray = [hydrogenObject, lithiumObject, berylliumObject, boronObject, magnesiumObject, potassiumObject, calciumObject, silverObject, bariumObject];
+var biCFPositiveArray = [hydrogenObject, lithiumObject, berylliumObject, boronObject, magnesiumObject, aluminiumObject, potassiumObject, calciumObject, silverObject, bariumObject];
 
 var biCFNegativeArray = [hydrogenObject, carbonObject, nitrogenObject, oxygenObject, flourineObject, siliconObject, phosphorusObject, sulfurObject, bromineObject, iodineObject];
 
